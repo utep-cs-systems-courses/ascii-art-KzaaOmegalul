@@ -23,6 +23,11 @@ void print_triangle(int leftCol, int size)
     for (col = 0; col < minCol; col++) putchar(' ');
     for (       ; col <= maxCol; col++) putchar('*');
     putchar('\n');
-  }
+  } 
+}
+void print_arrow(int leftCol, int squareSize, int triangleSize)
+{
+  print_triangle(leftCol, triangleSize);
+  print_square(leftCol + squareSize, squareSize);
 }
 
