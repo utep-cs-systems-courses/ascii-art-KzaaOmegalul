@@ -15,7 +15,7 @@ void print_char_11x16(char c)
 }
 void print_char_8x12(char c)
 {
-  c -= 0x20;
+  c -= 0x11;
   for(char row = 0; row < 11; row++)
   {
     unsigned short rowBits = font_8x12[c][row];
